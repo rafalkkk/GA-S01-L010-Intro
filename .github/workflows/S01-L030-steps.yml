@@ -5,7 +5,7 @@ on:
   push:
     paths:
       - "api/**"
-      - ".github/workflows/S01-L030-build.yml"
+      - ".github/workflows/S01-L030-steps.yml"
 
 jobs:
   build:
