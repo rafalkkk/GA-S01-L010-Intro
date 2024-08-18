@@ -1,11 +1,11 @@
-name: S01-L020-Build
+name: S01-L030-Steps
 
 on:
   workflow_dispatch:
-#  push:
-#    paths:
-#      - "api/**"
-#      - ".github/workflows/S01-L020-build.yml"
+  push:
+    paths:
+      - "api/**"
+      - ".github/workflows/S01-L020-build.yml"
 
 jobs:
   build:
@@ -21,3 +21,7 @@ jobs:
       - name: Build the app
         run: dotnet build weatherforecast-api-app.csproj
         working-directory: ./api
+      - name: Testing the code
+        run: dotnet test
+        working-directory: ./api
+
