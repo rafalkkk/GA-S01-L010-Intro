@@ -465,11 +465,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\OneDrive-Rafal\\OneDrive\\B Udemy\\Git-GitActions\\git_github\\api-app\\weatherforecast-api-app\\weatherforecast-api-app.csproj",
+      "projectUniqueName": "C:\\temp\\GA-S01-L010-Intro\\api\\weatherforecast-api-app.csproj",
       "projectName": "weatherforecast-api-app",
-      "projectPath": "E:\\OneDrive-Rafal\\OneDrive\\B Udemy\\Git-GitActions\\git_github\\api-app\\weatherforecast-api-app\\weatherforecast-api-app.csproj",
+      "projectPath": "C:\\temp\\GA-S01-L010-Intro\\api\\weatherforecast-api-app.csproj",
       "packagesPath": "C:\\Users\\mobil\\.nuget\\packages\\",
-      "outputPath": "E:\\OneDrive-Rafal\\OneDrive\\B Udemy\\Git-GitActions\\git_github\\api-app\\weatherforecast-api-app\\obj\\",
+      "outputPath": "C:\\temp\\GA-S01-L010-Intro\\api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mobil\\AppData\\Roaming\\NuGet\\NuGet.Config"

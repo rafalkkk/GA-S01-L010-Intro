@@ -1,0 +1,23 @@
+name: S01-L020-Build
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "api/**"
+      - ".github/workflows/S01-L020-build.yml"
+
+jobs:
+  build:
+    name: build-dotnet-api
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pull the code (checkout)
+        uses: actions/checkout@v4
+      - name: List runtimes
+        run: dotnet --list-runtimes
+      - name: List sdks
+        run: dotnet --list-sdks
+      - name: Build the app
+        run: dotnet build
+        working-directory: ./api
