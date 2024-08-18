@@ -19,5 +19,5 @@ jobs:
       - name: List sdks
         run: dotnet --list-sdks
       - name: Build the app
-        run: dotnet build
+        run: dotnet build weatherforecast-api-app.csproj
         working-directory: ./api
