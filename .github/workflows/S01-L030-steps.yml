@@ -22,6 +22,6 @@ jobs:
         run: dotnet build weatherforecast-api-app.csproj
         working-directory: ./api
       - name: Testing the code
-        run: dotnet test
+        run: dotnet test weatherforecast-api-app.csproj
         working-directory: ./api
 
