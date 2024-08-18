@@ -1,11 +1,11 @@
-name: S01-L030-Steps
+name: S01-L040-Runners
 
 on:
   workflow_dispatch:
   push:
     paths:
 #      - "api/**"
-      - ".github/workflows/S01-L030-steps.yml"
+      - ".github/workflows/S01-L040-runners.yml"
 
 jobs:
   build:
@@ -14,8 +14,8 @@ jobs:
     steps:
       - name: Pull the code (checkout)
         uses: actions/checkout@v4
-      - name: List runtimes
-        run: dotnet --list-runtimes
+      - name: Python version check
+        run: python --version
       - name: List sdks
         run: dotnet --list-sdks
       - name: Build the app

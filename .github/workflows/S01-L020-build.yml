@@ -2,10 +2,10 @@ name: S01-L020-Build
 
 on:
   workflow_dispatch:
-#  push:
-#    paths:
+  push:
+    paths:
 #      - "api/**"
-#      - ".github/workflows/S01-L020-build.yml"
+      - ".github/workflows/S01-L020-build.yml"
 
 jobs:
   build:
