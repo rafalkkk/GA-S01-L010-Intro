@@ -9,19 +9,11 @@ on:
 
 jobs:
   build:
-    name: build-dotnet-api
+    name: python-app-setup
     runs-on: ubuntu-latest
     steps:
       - name: Pull the code (checkout)
         uses: actions/checkout@v4
       - name: Python version check
         run: python --version
-      - name: List sdks
-        run: dotnet --list-sdks
-      - name: Build the app
-        run: dotnet build weatherforecast-api-app.csproj
-        working-directory: ./api
-      - name: Testing the code
-        run: dotnet test weatherforecast-api-app.csproj
-        working-directory: ./api
 
